@@ -11,24 +11,17 @@ function App() {
   const [error, setError] = React.useState("");
 
   const handleRadioChange = (event) => {
-    console.log(event.target.value);
     setConversionMode(event.target.value);
   };
-  console.log(conversionMode);
 
   const handleTextareaChange = (event) => {
-    console.log(event.target.value);
     setTextInput(event.target.value);
   };
-  console.log(textInput);
 
   const handleSubmit = (event) => {
-    console.log("handle submit check");
     event.preventDefault();
-    console.log(event.target.value);
     inputCheck(textInput, setError);
     if (!error) {
-      console.log("if condition check");
       conversionMode === "lowercase"
         ? setTextOutput(textToLowerCase(textInput))
         : setTextOutput(textToUpperCase(textInput));
