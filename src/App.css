@@ -1,5 +1,5 @@
 header {
-  background-color: #282c34;
+  background-color: #87719D;
   color: white;
   margin-bottom: 2rem;
   padding: 2rem 0;
@@ -7,10 +7,21 @@ header {
 }
 
 form {
-  margin: 1.6rem auto;
-  max-width: 80rem;
-  max-width: 68ch;
+  margin: 4.6rem auto;
+  max-width: 90rem;
+  max-width: 75ch;
   padding: 0 2rem;
+  border: solid 2px #BF84AB;
+  border-radius:25px;
+  box-shadow: 10px -9px 3px  #A67294;
+  -moz-box-shadow: 10px -9px 3px  #A67294;
+  -webkit-box-shadow: 10px -9px 3px  #A67294;
+  -o-box-shadow: 10px -9px 3px  #A67294;
+}
+
+
+.form-control {
+  margin: 2rem; 
 }
 
 .form-control > * + *,
@@ -29,7 +40,7 @@ form {
 
 .form-control__text > label {
   display: table;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .result {
@@ -41,4 +52,8 @@ form {
 
 .u-mt-3 {
   margin-top: 3rem;
+}
+
+.submit-button{
+  margin-left: 2rem;
 }
